@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn lint-staged
+pnpm run update-readme
+pnpm lint-staged

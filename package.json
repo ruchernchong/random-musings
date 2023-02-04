@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "update-readme": "source ./update-readme.sh"
   },
   "devDependencies": {
     "husky": "^6.0.0",
