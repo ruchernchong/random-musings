@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 cat /dev/null > README.md
 
@@ -13,12 +13,12 @@ random_musings_array=()
 
 for filename in "$dir"/*
 do
-  git_timestamp=$(git log --format="format:%ci" --diff-filter=A -- $filename)
+  git_timestamp=$(git log --format="format:%ci" --diff-filter=A -- "$filename")
   date=($git_timestamp)
   random_musings_array+=("$date:$filename")
 done
 
-sorted_array=($(printf "%s\n" "${random_musings_array[@]}" | sort -r -k1,1 -t':'))
+mapfile -t sorted_array < <(printf "%s\n" "${random_musings_array[@]}" | sort -r -k1,1 -t':')
 
 jq -n '[]' > feed.json
 
