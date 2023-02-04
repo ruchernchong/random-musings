@@ -1,7 +1,4 @@
----
-title: rss-autodiscovery-to-site
-date: "2023-01-29"
----
+# RSS Autodiscovery to Site
 
 Interestingly, there is a way to actually add the RSS feed to a site for RSS readers to pull up through their autodiscovery feature.
 

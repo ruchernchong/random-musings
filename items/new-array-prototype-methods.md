@@ -1,8 +1,3 @@
----
-title: New Array Prototype Methods
-date: "2023-01-12"
----
-
 # New Array Prototype Methods
 
 While reading [The State of JS 2022](https://2022.stateofjs.com/en-US/features/language/), I came across two new `Array.prototype` methods which I previously have not heard of. They are `Array.prototype.at()` and `Array.prototype.findLast()`.

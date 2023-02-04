@@ -1,8 +1,3 @@
----
-title: Double tilde operator in JavaScript
-date: "2023-01-10"
----
-
 # Double tilde operator in JavaScript
 
 There are 2 main ways to convert a string to a number.
