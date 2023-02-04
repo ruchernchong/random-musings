@@ -2,19 +2,19 @@
   {
     "content": "# RSS Autodiscovery to Site\n\nInterestingly, there is a way to actually add the RSS feed to a site for RSS readers to pull up through their autodiscovery feature.\n\n```html\n<link\n  rel=\"alternate\"\n  type=\"application/rss+xml\"\n  title=\"RSS feed for site\"\n  href=\"/rss\"\n/>\n```\n\nAnd if the feed is an ATOM feed, change the `type` to `application/atom+xml`",
     "date": "2023-01-29",
-    "path": "rss-autodiscovery-to-site.md",
+    "slug": "rss-autodiscovery-to-site",
     "title": "RSS Autodiscovery to Site"
   },
   {
     "content": "# New Array Prototype Methods\n\nWhile reading [The State of JS 2022](https://2022.stateofjs.com/en-US/features/language/), I came across two new `Array.prototype` methods which I previously have not heard of. They are `Array.prototype.at()` and `Array.prototype.findLast()`.\n\n## .at()\n\nThis is going to be very useful for returning a value at a particular index in the array without having to iterate through. This great improve the time complexity to O(1) which is the best.\n\nAn example from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at):\n\n```js\nconst array = [5, 12, 8, 130, 44];\n\narray.at(2); // 8\n```\n\nThe `.at()` makes the code looks sweet, short and simple.\n\n## .findLast()\n\nAs we know, the `.find()` method is one of the most commonly used method to-date. The `.findLast()` is the opposite where it iterates the array in a reverse order. This is so useful if I want to search for a value that appear the last.\n\nAn example from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast):\n\n```js\nconst array = [5, 12, 50, 130, 44];\n\narray.findLast((item) => item > 45); // 130\n```",
     "date": "2023-01-29",
-    "path": "new-array-prototype-methods.md",
+    "slug": "new-array-prototype-methods",
     "title": "New Array Prototype Methods"
   },
   {
     "content": "# Double tilde operator in JavaScript\n\nThere are 2 main ways to convert a string to a number.\n\n## Using Number()\n\nThe `Number()` way in JavaScript gets the job done fairly quickly. And if the string cannot be a valid number, it will return `NaN`.\n\n```js\nNumber(\"123.456\"); // 123.456\n```\n\n## Using parseInt()\n\nAnother method is using `parseInt()`. This returns the nearest rounded down integer.\n\n```js\nparseInt(\"123.456\"); // 123\n```\n\n---\n\nThe following method is the one that I recently came across. It was a rather interesting way to convert a string to a number.\n\n## Using Double tilde (~~)\n\n```js\n~~\"123.456\"; // 123\n```\n\nThis particular method ignores the decimal place and no rounding happens; just slightly different from the `parseInt()` method.",
     "date": "2023-01-10",
-    "path": "double-tilde-operator-in-javascript.md",
+    "slug": "double-tilde-operator-in-javascript",
     "title": "Double tilde operator in JavaScript"
   }
 ]

@@ -25,15 +25,15 @@ jq -n '[]' > feed.json
 for element in "${sorted_array[@]}"; do
   IFS=: read -r date filename <<< "$element"
   title=$(head -n 1 "$filename" | sed 's/# //')
-  path=$(basename "$filename")
+  slug=$(basename "${filename%.*}")
   content=$(cat "$filename")
 
   jq \
       --arg content "$content" \
       --arg date "$date" \
-      --arg path "$path" \
+      --arg slug "$slug" \
       --arg title "$title" \
-      '. += [{"content": $content, "date": $date, "path": $path, "title": $title}]' \
+      '. += [{"content": $content, "date": $date, "slug": $slug, "title": $title}]' \
       feed.json > feed.json.tmp
 
   mv feed.json.tmp feed.json
