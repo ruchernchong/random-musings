@@ -1,0 +1,22 @@
+name: Update README.md and feed.json
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          "${GITHUB_WORKSPACE}/update-readme.sh"
+          
+          # https://github.com/actions/checkout/discussions/479#discussioncomment-625461
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git diff-index --quiet HEAD || git commit --message "Update `README.md` and `feed.json`"
+          git push
