@@ -6,9 +6,6 @@
   "author": "Ru Chern Chong <hello@ruchern.xyz>",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "update-readme": "./update-readme.sh"
-  },
   "devDependencies": {
     "husky": "^6.0.0",
     "lint-staged": "^13.1.0",
