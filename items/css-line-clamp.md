@@ -28,6 +28,9 @@ A very useful CSS trick to truncate long text to the number of lines specified. 
 And the result? Just a simple 3 lines of text ending with an ellipsis.
 
 ```html
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur esse
-in quos reprehenderit voluptas...
+Lorem ipsum dolor sit amet,
+<br />
+consectetur adipisicing elit.
+<br />
+Autem consectetur esse in quos reprehenderit voluptas...
 ```
