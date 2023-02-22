@@ -1,5 +1,11 @@
 [
   {
+    "content": "# CSS: line-clamp\n\nA very useful CSS trick to truncate long text to the number of lines specified. Using this CSS tricks do help in performance as JavaScript is generally heavy and expensive in resource.\n\n## CSS\n\n```css\n.long-text {\n  width: 300px;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  overflow: hidden;\n}\n```\n\n## HTML\n\n```html\n<p class=\"long-text\">\n  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto\n  asperiores distinctio dolore, dolores eaque error esse eum hic id inventore\n  magni maxime minus modi molestiae quasi quod tempora voluptates?\n</p>\n```\n\n## Result\n\nAnd the result? Just a simple 3 lines of text ending with an ellipsis.\n\n```html\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur esse\nin quos reprehenderit voluptas...\n```",
+    "date": "2023-02-23",
+    "slug": "css-line-clamp",
+    "title": "CSS: line-clamp"
+  },
+  {
     "content": "# Parse String to Boolean using JSON.parse()\n\n`JSON.parse()` is able to convert a string to boolean easily while retaining its value.\n\n```js\nlet strTrue = \"true\";\nlet strFalse = \"false\";\n\nconsole.log(JSON.parse(strTrue)); // true\nconsole.log(JSON.parse(strFalse)); // false\n```\n\nWhile working on environment variables using `process.env` from a `.env` file, I realised that I had to use strict equal `process.env.SOME_VARIABLE === \"true\"` in order to make the condition as a valid boolean since environment variables are `typeof` String. While finding a better way around this, I came across using the `JSON.parse()` way that seems to make it easier. I was able to write a reusable function to make things easier for me too.\n\n```yaml\n# .env\nSOME_VARIABLE=true\n```\n\n```ts\nconst isFeatureEnabled = (feature: string): boolean => {\n  return JSON.parse(feature);\n};\n\nisFeatureEnabled(process.env.SOME_VARIABLE); // true\n```\n\nLet me know how other ways do you handle converting a string of values \"true\" or \"false\" to their boolean values.",
     "date": "2023-02-13",
     "slug": "parse-string-to-boolean-using-json-parse",
