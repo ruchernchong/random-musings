@@ -20,7 +20,7 @@ console.table(items);
 
 /**
  * | Index | Value |
- * |---|---|
+ * | --- | --- |
  * | 0 | foo |
  * | 1 | bar |
  * | 2 | baz |
