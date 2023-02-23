@@ -17,14 +17,12 @@ It basically displays the data that one would log to the console in a table form
 const items = ["foo", "bar", "baz"];
 
 console.table(items);
-
-/**
- * | Index | Value |
- * | --- | --- |
- * | 0 | foo |
- * | 1 | bar |
- * | 2 | baz |
- */
 ```
+
+| Index | Value |
+| ----- | ----- |
+| 0     | foo   |
+| 1     | bar   |
+| 2     | baz   |
 
 `console.table()` definitely formats the data nicely and makes things easier to read.
