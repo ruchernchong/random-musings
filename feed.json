@@ -1,6 +1,6 @@
 [
   {
-    "content": "# console.table()\n\nWe are all familiar with things like:\n\n1. `console.log()`\n2. `console.error()`\n3. `console.warn()`\n4. `console.info()`\n\nBut, `console.table()` is a really interesting one.\n\nIt basically displays the data that one would log to the console in a table form, as per what the method suggests so.\n\n## Example\n\n```js\nconst items = [\"foo\", \"bar\", \"baz\"];\n\nconsole.table(items);\n\n/**\n * | Index | Value |\n * |---|---|\n * | 0 | foo |\n * | 1 | bar |\n * | 2 | baz |\n */\n```\n\n`console.table()` definitely formats the data nicely and makes things easier to read.",
+    "content": "# console.table()\n\nWe are all familiar with things like:\n\n1. `console.log()`\n2. `console.error()`\n3. `console.warn()`\n4. `console.info()`\n\nBut, `console.table()` is a really interesting one.\n\nIt basically displays the data that one would log to the console in a table form, as per what the method suggests so.\n\n## Example\n\n```js\nconst items = [\"foo\", \"bar\", \"baz\"];\n\nconsole.table(items);\n\n/**\n * | Index | Value |\n * | --- | --- |\n * | 0 | foo |\n * | 1 | bar |\n * | 2 | baz |\n */\n```\n\n`console.table()` definitely formats the data nicely and makes things easier to read.",
     "date": "2023-02-24",
     "slug": "console-table",
     "title": "console.table()"
