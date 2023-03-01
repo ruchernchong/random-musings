@@ -1,5 +1,11 @@
 [
   {
+    "content": "# Module Federation\n\nIt was through a sharing session within my organisation that I learned about [Module Federation](https://webpack.js.org/concepts/module-federation/) as one of the most exciting feature in Webpack 5. According to different blogs, they claimed that this is a game changer in JavaScript.\n\n## What is Module Federation?\n\nBased on the definition, it is a webpack module that makes sharing code and dependencies between different code bases easier. This loads the code dynamically at runtime to reduce code duplication and only downloads the missing dependencies if any.\n\n## Possible uses\n\n### Component library\n\nAs part of the sharing session, it was being introduced with the component library build for the organisation. This is important and useful so that there is a single design language which enforces the brand and UX guidelines across all the other projects.\n\n### Micro-frontends\n\nThey are not exactly components but main purpose is basically to scale applications that are in large organisations.\n\n## Personal thoughts\n\nThis is a very new concept to me and is something I definitely look forward to utilise. At this moment, I will choose to use it for projects that requires scalability and huge amount of code sharing among independent applications.\n\nThat is all I have for today and really excited to see where Module Federation brings JavaScript to.",
+    "date": "2023-03-02",
+    "slug": "module-federation",
+    "title": "Module Federation"
+  },
+  {
     "content": "# console.table()\n\nWe are all familiar with things like:\n\n1. `console.log()`\n2. `console.error()`\n3. `console.warn()`\n4. `console.info()`\n\nBut, `console.table()` is a really interesting one.\n\nIt basically displays the data that one would log to the console in a table form, as per what the method suggests so.\n\n## Example\n\n```js\nconst items = [\"foo\", \"bar\", \"baz\"];\n\nconsole.table(items);\n```\n\n| Index | Value |\n| ----- | ----- |\n| 0     | foo   |\n| 1     | bar   |\n| 2     | baz   |\n\n`console.table()` definitely formats the data nicely and makes things easier to read.",
     "date": "2023-02-24",
     "slug": "console-table",
