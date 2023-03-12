@@ -12,8 +12,7 @@ console.log(JSON.parse(strFalse)); // false
 
 While working on environment variables using `process.env` from a `.env` file, I realised that I had to use strict equal `process.env.SOME_VARIABLE === "true"` in order to make the condition as a valid boolean since environment variables are `typeof` String. While finding a better way around this, I came across using the `JSON.parse()` way that seems to make it easier. I was able to write a reusable function to make things easier for me too.
 
-```yaml
-# .env
+```yaml .env
 SOME_VARIABLE=true
 ```
 
