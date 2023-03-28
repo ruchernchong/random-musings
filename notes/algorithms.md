@@ -29,3 +29,5 @@ export const fibonacci = (number) => {
 
 fibonacci(6); // 8
 ```
+
+## Dynamic Programming
