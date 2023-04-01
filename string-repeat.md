@@ -13,7 +13,7 @@ console.log(`I feel ${mood.repeat(3)}`);
 // Expected output: "I feel Happy! Happy ! Happy! "
 ```
 
-And for my particular case, to repeat `#` for 6 times, all I needed to do was to:
+And for my particular case, to repeat `#` 6 times, all I needed to do was:
 
 ```js
 console.log(`${"#".repeat(6)}`);
