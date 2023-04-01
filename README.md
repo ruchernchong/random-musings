@@ -2,6 +2,7 @@
 
 A collection containing fun and interesting things I came across randomly.
 
+- 2023-04-02: [String.prototype.repeat()](https://github.com/ruchernchong/random-musings/blob/main/items/string-repeat.md)
 - 2023-03-02: [Module Federation](https://github.com/ruchernchong/random-musings/blob/main/items/module-federation.md)
 - 2023-02-24: [console.table()](https://github.com/ruchernchong/random-musings/blob/main/items/console-table.md)
 - 2023-02-23: [CSS: line-clamp](https://github.com/ruchernchong/random-musings/blob/main/items/css-line-clamp.md)
