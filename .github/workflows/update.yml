@@ -22,4 +22,4 @@ jobs:
           git add --all
           git diff-index --quiet HEAD || git commit --message "Update \`README.md\` and \`feed.json\`"
           git push
-          curl -X POST https://ruchern.xyz/api/revalidate?secret=${{ secrets.NEXT_REVALIDATE_TOKEN }}&page=random-musings
+          curl -X POST -d {} https://ruchern.xyz/api/revalidate?secret=${{ secrets.NEXT_REVALIDATE_TOKEN }}&page=random-musings
