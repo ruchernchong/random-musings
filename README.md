@@ -2,6 +2,7 @@
 
 A collection containing fun and interesting things I came across randomly.
 
+- 2023-04-09: [Ways to use Exclude in TypeScript by Matt Pocock](https://github.com/ruchernchong/random-musings/blob/main/items/ways-to-use-exclude-in-typescript.md)
 - 2023-04-02: [String.prototype.repeat()](https://github.com/ruchernchong/random-musings/blob/main/items/string-repeat.md)
 - 2023-03-02: [Module Federation](https://github.com/ruchernchong/random-musings/blob/main/items/module-federation.md)
 - 2023-02-24: [console.table()](https://github.com/ruchernchong/random-musings/blob/main/items/console-table.md)
