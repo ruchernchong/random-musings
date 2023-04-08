@@ -4,7 +4,7 @@ Link to blog: [9 ways to use Exclude in TypeScript by Matt Pocock](https://www.t
 
 This [blog](https://www.totaltypescript.com/uses-for-exclude-type-helper) is really useful for sharing and using the `Exclude` type helper in TypeScript.
 
-1. Remove a member of a union
+## Remove a member of a union
 
 ```ts
 type Fruit = "apple" | "banana" | "orange";
@@ -18,7 +18,7 @@ The first argument represents the full union. The second argument can be any typ
 type Result = Exclude<Fruit, "pear">; // 'apple' | 'banana' | 'orange'
 ```
 
-2. Remove multiple members from a union
+## Remove multiple members from a union
 
 ```ts
 type Event = "click" | "focus" | "change" | "abort";
